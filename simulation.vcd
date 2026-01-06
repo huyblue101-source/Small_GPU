@@ -1,0 +1,433 @@
+$date
+	Tue Jan 06 23:04:33 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module compute_core_tb $end
+$scope module uut $end
+$var wire 1 ! clk $end
+$var wire 1 " reset $end
+$var wire 4 # src2_reg [3:0] $end
+$var wire 4 $ src1_reg [3:0] $end
+$var wire 3 % scheduled_thread [2:0] $end
+$var wire 4 & opcode [3:0] $end
+$var wire 16 ' instruction [15:0] $end
+$var wire 8 ( immediate [7:0] $end
+$var wire 4 ) dest_reg [3:0] $end
+$var reg 8 * active_threads [7:0] $end
+$var reg 16 + alu_result [15:0] $end
+$var reg 1 , cmp_flag $end
+$var reg 1 - halt $end
+$var reg 8 . next_active_threads [7:0] $end
+$var reg 1 / pc_increment $end
+$var integer 32 0 current_thread [31:0] $end
+$var integer 32 1 i [31:0] $end
+$scope module decoder_inst $end
+$var wire 16 2 instruction [15:0] $end
+$var reg 4 3 dest_reg [3:0] $end
+$var reg 8 4 immediate [7:0] $end
+$var reg 4 5 opcode [3:0] $end
+$var reg 4 6 src1_reg [3:0] $end
+$var reg 4 7 src2_reg [3:0] $end
+$upscope $end
+$scope module fetcher_inst $end
+$var wire 16 8 instruction [15:0] $end
+$var wire 16 9 pc_in [15:0] $end
+$upscope $end
+$scope module scheduler_inst $end
+$var wire 8 : active_threads [7:0] $end
+$var wire 1 ! clk $end
+$var wire 1 " reset $end
+$var parameter 32 ; NUM_THREADS $end
+$var reg 3 < scheduled_thread [2:0] $end
+$var reg 1 = thread_found $end
+$var integer 32 > i [31:0] $end
+$var integer 32 ? last_thread [31:0] $end
+$var integer 32 @ thread [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 ;
+$end
+#0
+$dumpvars
+bx @
+b11111111111111111111111111111111 ?
+bx >
+x=
+b0 <
+b11111111 :
+b0 9
+b110000000000000 8
+b0 7
+b0 6
+b110 5
+b0 4
+b0 3
+b110000000000000 2
+b1000 1
+b10000 0
+x/
+bx .
+0-
+x,
+bx +
+b11111111 *
+b0 )
+b0 (
+b110000000000000 '
+b110 &
+b0 %
+b0 $
+b0 #
+1"
+0!
+$end
+#5
+b10000 0
+b1000 1
+1!
+#10
+0!
+0"
+#15
+b1 (
+b1 4
+b1 #
+b1 7
+b1 )
+b1 3
+b0 ?
+b110000100000001 '
+b110000100000001 2
+b110000100000001 8
+b1 9
+b111 @
+b1001 >
+1=
+1/
+b0 0
+b11111111 .
+1!
+#20
+0!
+#25
+b0 (
+b0 4
+b0 #
+b0 7
+b0 )
+b0 3
+b1 ?
+b110000000000000 '
+b110000000000000 2
+b110000000000000 8
+b0 9
+b1 %
+b1 <
+b0 @
+b1001 >
+1=
+1!
+#30
+0!
+#35
+b10 ?
+b10 %
+b10 <
+b110000000000000 '
+b110000000000000 2
+b110000000000000 8
+b0 9
+b1 @
+b1001 >
+1=
+b1 0
+1!
+#40
+0!
+#45
+b11 ?
+b11 %
+b11 <
+b10 0
+b10 @
+b1001 >
+1=
+1!
+#50
+0!
+#55
+b100 ?
+b100 %
+b100 <
+b110000000000000 '
+b110000000000000 2
+b110000000000000 8
+b0 9
+b11 @
+b1001 >
+1=
+b11 0
+1!
+#60
+0!
+#65
+b101 ?
+b101 %
+b101 <
+b100 0
+b100 @
+b1001 >
+1=
+1!
+#70
+0!
+#75
+b110 ?
+b110 %
+b110 <
+b110000000000000 '
+b110000000000000 2
+b110000000000000 8
+b0 9
+b101 @
+b1001 >
+1=
+b101 0
+1!
+#80
+0!
+#85
+b111 ?
+b111 %
+b111 <
+b110 0
+b110 @
+b1001 >
+1=
+1!
+#90
+0!
+#95
+b100001 (
+b100001 4
+b1 #
+b1 7
+b10 $
+b10 6
+b10 )
+b10 3
+b0 &
+b0 5
+b0 ?
+b0 %
+b0 <
+b1000100001 '
+b1000100001 2
+b1000100001 8
+b10 9
+b111 @
+b1001 >
+1=
+b111 0
+1!
+#100
+0!
+#105
+b1 (
+b1 4
+b0 $
+b0 6
+b1 )
+b1 3
+b110 &
+b110 5
+b1 ?
+b110000100000001 '
+b110000100000001 2
+b110000100000001 8
+b1 9
+b1 %
+b1 <
+b101 +
+b0 0
+b0 @
+b1001 >
+1=
+1!
+#110
+0!
+#115
+b10 ?
+b10 %
+b10 <
+b110000100000001 '
+b110000100000001 2
+b110000100000001 8
+b1 9
+b1 @
+b1001 >
+1=
+b1 0
+1!
+#120
+0!
+#125
+b11 ?
+b11 %
+b11 <
+b10 0
+b10 @
+b1001 >
+1=
+1!
+#130
+0!
+#135
+b100 ?
+b100 %
+b100 <
+b110000100000001 '
+b110000100000001 2
+b110000100000001 8
+b1 9
+b11 @
+b1001 >
+1=
+b11 0
+1!
+#140
+0!
+#145
+b101 ?
+b101 %
+b101 <
+b100 0
+b100 @
+b1001 >
+1=
+1!
+#150
+0!
+#155
+b110 ?
+b110 %
+b110 <
+b110000100000001 '
+b110000100000001 2
+b110000100000001 8
+b1 9
+b101 @
+b1001 >
+1=
+b101 0
+1!
+#160
+b0 (
+b0 4
+b0 #
+b0 7
+b0 )
+b0 3
+b110000000000000 '
+b110000000000000 2
+b110000000000000 8
+b0 9
+b0 %
+b0 <
+b11111111111111111111111111111111 ?
+b10000 0
+b1000 1
+0!
+1"
+#165
+b10000 0
+b1000 1
+1!
+#170
+0!
+0"
+#175
+b1 (
+b1 4
+b1 #
+b1 7
+b1 )
+b1 3
+b110000100000001 '
+b110000100000001 2
+b110000100000001 8
+b1 9
+b0 ?
+b0 0
+b111 @
+b1001 >
+1=
+1!
+#180
+0!
+#185
+b0 (
+b0 4
+b0 #
+b0 7
+b0 )
+b0 3
+b1 ?
+b1 %
+b1 <
+b110000000000000 '
+b110000000000000 2
+b110000000000000 8
+b0 9
+b0 @
+b1001 >
+1=
+1!
+#190
+0!
+#195
+b10 ?
+b10 %
+b10 <
+b1 0
+b1 @
+b1001 >
+1=
+1!
+#200
+0!
+#205
+b11 ?
+b11 %
+b11 <
+b110000000000000 '
+b110000000000000 2
+b110000000000000 8
+b0 9
+b10 @
+b1001 >
+1=
+b10 0
+1!
+#210
+0!
+#215
+b100 ?
+b100 %
+b100 <
+b11 0
+b11 @
+b1001 >
+1=
+1!
+#220
+0!
