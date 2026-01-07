@@ -4,9 +4,9 @@
 module compute_core_tb;
 
     // Parameters
-    parameter DATA_WIDTH = 32;      // Ví dụ cho chiều rộng dữ liệu
-    parameter NUM_THREADS = 4;      // Số lượng threads
-    parameter REG_COUNT = 16;       // Số lượng thanh ghi trong mỗi thread
+    parameter DATA_WIDTH = 64;      // chiều rộng dữ liệu
+    parameter NUM_THREADS = 4;      // Số threads
+    parameter REG_COUNT = 16;       // Số thanh ghi trong mỗi thread
     parameter ADDR_WIDTH = 4;       // Chiều rộng địa chỉ bộ nhớ
 
     // Inputs
