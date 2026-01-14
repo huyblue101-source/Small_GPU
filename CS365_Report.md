@@ -1,5 +1,5 @@
 # Implementation of a small GPU by using Verilog.
-## Program Documentation
+## I.Program Documentation
 ### Introduction
 ### GPU Architecture
 ### Scheduler in GPU
@@ -7,6 +7,7 @@
 ### Decoder in GPU
 ### ALU in GPU
 ### GPU Compute Core
-## Testbench Documentation
-## Contribution
-## Acknowledgements
+## II. Testbench Documentation
+## III. Contribution
+## IV. Acknowledgements
+
