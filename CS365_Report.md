@@ -1,4 +1,5 @@
 # -----------------------------------------------
+#                    Project
 # Implementation of a small GPU by using Verilog.
 # -----------------------------------------------
 ## I. Program Documentation
@@ -12,6 +13,7 @@
 ## II. Testbench Documentation
 ## III. Contribution
 ## IV. Acknowledgements
+
 
 
 
