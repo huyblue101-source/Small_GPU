@@ -10,7 +10,10 @@ module compute_core (
     reg [`NUM_THREADS-1:0] active_threads;
     reg [`DATA_WIDTH-1:0] data_mem [0:15];
     
+    // Thread Control
     wire [`THREAD_ID_WIDTH-1:0] scheduled_thread;
+    
+    // Instruction Pipeline
     wire [`DATA_WIDTH-1:0] instruction;
     wire [3:0] opcode;
     wire [3:0] dest_reg;
@@ -175,7 +178,8 @@ module compute_core (
                 endcase
                 
                 // Logging
-                $display("Time=%0t | Thread=%0d | PC=%0d | Instruction=%h | Opcode=%b | dest=R%0d | src1=R%0d | src2=R%0d | imm=%d", 
+                // Logging - different format for R-Type vs I-Type
+               $display("Time=%0t | Thread=%0d | PC=%0d | Instruction=%h | Opcode=%b | dest=R%0d | src1=R%0d | src2=R%0d | imm=%d", 
                          $time, current_thread, pc[current_thread], instruction, opcode, 
                          dest_reg, src1_reg, src2_reg, immediate);
             end

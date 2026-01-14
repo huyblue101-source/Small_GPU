@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1768311481" />
+    <testcase name="test_matadd_simple" classname="testbench.test_execution" file="/Users/tandang/Small_GPU/testbench/test_execution.py" lineno="7" time="0.010022878646850586" sim_time_ns="810.0" ratio_time="80815.10597302504" />
+  </testsuite>
+</testsuites>
