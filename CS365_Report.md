@@ -1,4 +1,6 @@
+# -----------------------------------------------
 # Implementation of a small GPU by using Verilog.
+# -----------------------------------------------
 ## I. Program Documentation
 ### Introduction
 ### 1. GPU Architecture
@@ -10,5 +12,6 @@
 ## II. Testbench Documentation
 ## III. Contribution
 ## IV. Acknowledgements
+
 
 
